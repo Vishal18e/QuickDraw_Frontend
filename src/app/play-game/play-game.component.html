@@ -1,0 +1,117 @@
+<!-- HTML CODE -->
+
+<div class="container-fluid background">
+    <div class="row" [ngStyle]="{'width':'100%','height':'500px'}" rows="4">
+
+        <div class="col-xl-3" [ngStyle]="{'background-color':'transparent','align-items':'center'}">
+
+            <div class="Reverse" [ngStyle]="{'width':'100px','height':'40px','border':'4px solid black','border-radius':'10px','text-align':'center','margin':'20%'}">
+                <a routerLink="/" id="goback">Back</a><br>
+            </div>
+
+            <div class="Steps">Steps to play</div>
+
+            <ul>
+                <li>
+                    <i class="fa fa-arrow-circle-right"></i> Choose one of the labels provided on the right.<br>
+                    (For eg. House, Bird, Pencil,etc.)
+                </li>
+                <li>
+                    <i class="fa fa-arrow-circle-right"></i> Draw inside the given Canvas Area.
+                </li>
+                <li>
+                    <i class="fa fa-arrow-circle-right"></i> Press 'Confirm Selection'.
+                </li>
+                <li>
+                    <i class="fa fa-arrow-circle-right"></i> The result will be displayed on the computer screen.
+                </li>
+                <li>
+                    <i class="fa fa-arrow-circle-right"></i> If you make a mistake while drawing, press 'Clear the Canvas.'
+                </li>
+            </ul>
+
+            <br>
+            
+            <h4 style="color:lavenderblush;text-align: center;">{{comment}}{{final_class_name}}</h4><br><br>
+
+
+        </div>
+
+
+
+
+
+        <div class="col-xl-6" [ngStyle]="{'background-color':'transparent'}">
+            <div class="row" [ngStyle]="{'width':'100%','height':'auto','margin':'10px'}">
+
+                <div class="col-1"></div>
+                <div class="col-10" [ngStyle]="{'background-color': 'transparent', 'text-align': 'center', 'vertical-align': 'middle', 'justify-content': 'center'}">
+
+                    <h1 style="color:rgb(33, 199, 33);">Quick Draw Game</h1>
+
+                    <div class="row" [ngStyle]="{'width':'100%','height':'640px','margin-top':'40px','background-color':'burlywood','padding-top':'8%'}">
+
+                        <div class="col-1"></div>
+                        <div class="col-10" [ngStyle]="{'background-color':'white','height':'auto','margin-bottom':'7%'}">
+
+                            <h2>Draw inside this canvas</h2>
+
+                            <div class="row" [ngStyle]="{'width':'100%','text-align':'center'}">
+
+                                <div class="col-1"></div>
+                                <div class="col-10" id="enc_canvas" [ngStyle]="{'margin-bottom':'6%'}" #Enc_canvas>
+                                    <canvas id="mycanvas" #Mycanvas [ngStyle]="{'background-color':'white','width':'100%','height':'480px','border':'2px solid black'}"></canvas>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+
+                    </div>
+                </div>
+                <div class="col-1"></div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-3" [ngStyle]="{'background-color':'transparent'}">
+            <h2 [ngStyle]="{'text-align':'center','margin-top':'10%','color':'greenyellow'}">Options</h2>
+
+            <div class="row options">
+                <div class="col-6">
+                    <div class="Sun">Sun</div>
+                    <div class="Flower">Flower</div>
+                    <div class="Pencil">Pencil</div>
+                    <div class="Tree">Tree</div>
+                    <div class="Bird">Bird</div>
+                </div>
+                <div class="col-6">
+                    <div class="House">House</div>
+                    <div class="Mug">Mug</div>
+                    <div class="Umbrella">Umbrella</div>
+                    <div class="Spoon">Spoon</div>
+                    <div class="Hand">Hand</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div id="sel1">
+                        <p (click)="detectImage()">Confirm Selection</p>
+                    </div>
+                    <div id="sel2" (mousedown)="clear_board()">
+                        <p>Clear the Selection</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.Reverse {
+    text-decoration: none;
+
+}
+
+    .Reverse a {
+        color: black;
+    }
+
+        .Reverse a:hover {
+            color: black;
+            text-decoration: none;
+            color: yellow !important;
+        }
+
+    .Reverse:hover {
+        background-color:transparent;
+        color:yellow !important;
+
+    }
+
+.Steps {
+    font-size: 100%;
+    color: black;
+    border: 3px solid black;
+    background: linear-gradient( to right,rgba(251, 253, 252,0.5),rgba(240, 15, 66,0));
+    width: 55%;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 22%;
+    margin-bottom: 4%;
+}
+
+ul {
+    margin-top: 20%;
+    line-height: 30px;
+    color: white;
+    margin-left: 4%;
+    list-style: none;
+    font-family: 'Cambria Math';
+}
+
+.options .col-6 div {
+    width: 90%;
+    padding: 10%;
+    border: 2px solid black;
+    border-radius:40px;
+    box-shadow: rgb(69, 212, 198) ;
+    background: linear-gradient(rgba(249, 232, 35,0.7),rgba(35, 249, 208,0));
+    color: white;
+    margin: 10% 5%;
+    text-align: center;
+    font-family: 'Cambria Math';
+}
+
+    .options .col-6 div:hover {
+        background: linear-gradient( to right,rgba(241, 58, 247,0.7),rgba(78, 242, 29,0));
+    }
+
+#sel1 {
+    font-family: 'Cambria Math';
+    font-size: 130%;
+    width: 90%;
+    height: 50px;
+    color: white;
+    border-radius: 10%;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 110%;
+}
+
+#sel2 {
+    font-family: 'Cambria Math';
+    font-size: 130%;
+    width: 90%;
+    height: 50px;
+    color: white;
+    border-radius: 10%;
+    border: 3px solid black;
+    margin: 10px;
+    padding:10px 0px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 110%;
+
+}
+
+#sel1:hover {
+    background: linear-gradient( to right,rgba(12, 249, 243,0.7),rgba(249, 40, 12,0));
+    color: greenyellow;
+}
+
+#sel2:hover {
+    background: linear-gradient( to right,rgba(12, 249, 243,0.7),rgba(249, 40, 12,0));
+    color: greenyellow;
+}
