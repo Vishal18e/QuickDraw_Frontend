@@ -1,4 +1,6 @@
 # QUICKDRAW
+The Project Quick Draw Recognizer has two divisions namely backend and frontend, The UI interface/frontend has been created using Angular Framework which required HTML,CSS,JS and TS. The User is provided with two options namely Create Dataset and Play Game. Under Create Dataset user draw one of the ten mentioned images on the canvas and gives it a label , upon confirmation this image gets stored in the data folder of the server. Else when the user opt to play Game, user can draw any one image of the ten available labels on the canvas and upon confirmation user gets an output from the backend portion which consists of a well-trained neural networks with an accuracy of over 98 percent.
+//
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
